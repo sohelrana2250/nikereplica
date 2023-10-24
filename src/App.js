@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import routes from './Router/router';
+
+import { RouterProvider } from "react-router-dom";
+import AuthProvider from './components/AuthProvider/AuthProvider';
+// hsoting link: https://6537a4f137a6191b020735c4--lighthearted-babka-4cfc26.netlify.app/
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <AuthProvider>
+        <RouterProvider router={routes} />
+      </AuthProvider>
+
+
+
     </div>
   );
 }
