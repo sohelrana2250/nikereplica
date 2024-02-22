@@ -6,6 +6,7 @@ import AddToCard from "../components/pages/AddToCard/AddToCard";
 import NewArrivals from "../components/pages/NewARRIVALS/NewArrivals";
 import ProductCatagorie from "../components/TrandingProduct/ProductCatagories";
 import ErrorElement from "../components/pages/ErrorElement/ErrorElement";
+import Navbar from "../components/Expriiment/Navbar";
 
 
 
@@ -21,7 +22,8 @@ const routes = createBrowserRouter([
             { path: '/all_product', element: <AllProducts /> },
             { path: '/add_to_card', element: <AddToCard /> },
             { path: '/New_arrivals', element: <NewArrivals /> },
-            { path: '/trandint_product/:id', element: <ProductCatagorie /> }
+            { path: '/trandint_product/:id', element: <ProductCatagorie /> },
+            { path: '/navbar', element: <Navbar /> }
 
 
         ]
